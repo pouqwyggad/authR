@@ -8,6 +8,7 @@ export const Layout = observer(() => {
 
     const {store} = useContext(Context)
 
+
     useEffect(() => {
         if (localStorage.getItem("token")) {
             store.checkAuth()

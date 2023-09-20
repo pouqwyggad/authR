@@ -20,8 +20,6 @@ export default class Store {
     setUser(user: IUser) {
         this.user = user
     }
-
-
     async login(email: string, password: string) {
         try {
             const response = await AuthService.login(email, password)
